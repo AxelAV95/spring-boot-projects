@@ -1,0 +1,3 @@
+com\example\rest\entity\Manga.class
+com\example\rest\controller\MangaController.class
+com\example\rest\RestMangaAppApplication.class
