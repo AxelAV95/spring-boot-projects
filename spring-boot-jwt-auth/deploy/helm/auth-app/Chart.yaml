@@ -1,0 +1,6 @@
+apiVersion: v2
+name: auth-app
+description: A Helm chart for Spring Boot JWT Auth application
+type: application
+version: 0.1.0
+appVersion: "0.0.1-SNAPSHOT"

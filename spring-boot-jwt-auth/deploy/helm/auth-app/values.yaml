@@ -1,0 +1,30 @@
+replicaCount: 2
+
+image:
+  repository: auth-app
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+mysql:
+  image: mysql:8.0
+  database: auth_db
+  storage: 5Gi
+
+secrets:
+  mysql:
+    username: root
+    password: your_password
+  jwt:
+    secret: your-very-secure-secret-key-please-change-this
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "0.5"
+  limits:
+    memory: "1024Mi"
+    cpu: "1"
