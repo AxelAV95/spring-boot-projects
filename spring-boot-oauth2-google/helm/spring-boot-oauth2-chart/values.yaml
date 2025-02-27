@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: axelav95/spring-boot-oauth2-google:latest
+  repository: axelav95/spring-boot-oauth2-google
   tag: "latest"
   pullPolicy: IfNotPresent
 
