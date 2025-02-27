@@ -1,0 +1,6 @@
+apiVersion: v2
+name: spring-boot-oauth2-chart
+description: Helm chart para una aplicación Spring Boot con OAuth 2.0 de Google
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

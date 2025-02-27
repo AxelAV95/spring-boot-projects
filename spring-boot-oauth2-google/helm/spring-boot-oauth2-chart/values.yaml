@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: axelav95/spring-boot-oauth2-google:latest
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
+
+env:
+  googleClientId: ""
+  googleClientSecret: ""
